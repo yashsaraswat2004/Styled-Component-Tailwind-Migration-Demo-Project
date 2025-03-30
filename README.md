@@ -1,54 +1,20 @@
-# React + TypeScript + Vite
+# Template Playground Migration Demo Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have created this sample project demonstrating the migration of the Accord Project Template Playground's UI from Styled Components and Ant Design to Tailwind CSS. It focuses on migrating a Sidebar component, which is part of the Template Playground's learning pathway feature.
 
-Currently, two official plugins are available:
+## Before Migration
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Tech Stack**: Styled Components, Ant Design, React
+- **Commit**: [Initial setup with Styled Components and Ant Design](https://github.com/yashsaraswat2004/Styled-Component-Tailwind-Migration-Demo-Project/commit/d4f26a598efcc523c30de0d6e105000d65f16dcd)
 
-## Expanding the ESLint configuration
+## After Migration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Tech Stack**: Tailwind CSS, React
+- **Commit**: [Migrated to Tailwind CSS](https://github.com/yashsaraswat2004/Styled-Component-Tailwind-Migration-Demo-Project/commit/7ee7bdde390a55b917a1fab8262028e0c7a2de67)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## How to Run
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yashsaraswat2004/Styled-Component-Tailwind-Migration-Demo-Project
+   ```

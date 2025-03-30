@@ -11,9 +11,9 @@ function App() {
   ];
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div className='flex'>
       <Sidebar steps={steps}/>
-      <div style={{ marginLeft: '450px', transition: 'margin-left 0.3s', padding: '20px', width: '100%' }}>
+      <div className='ml-[450px] p-20, w-[100%] mt-[100px] text-3xl'>
         <Routes>
           <Route path="/step1" element={<h1>Step 1: Introduction</h1>} />
           <Route path="/step2" element={<h1>Step 2: Basics</h1>} />
